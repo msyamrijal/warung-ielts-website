@@ -5,7 +5,32 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PenTool, Users, Clock, Award, Home, Star, BookOpen, Target, MessageCircle } from "lucide-react";
+import { Headphones, Mic, BookText } from "lucide-react";
 
+const features = [
+  {
+    icon: PenTool,
+    title: "Metode Imitative Writing",
+    description: "Pelopor metode imitative writing yang terbukti efektif untuk meningkatkan skor writing IELTS"
+  },
+  {
+    icon: Target,
+    title: "Focus IELTS Saja",
+    description: "Spesialisasi 100% pada persiapan IELTS untuk hasil yang lebih maksimal dan terarah"
+  },
+  {
+    icon: Users,
+    title: "Mentoring Personal",
+    description: "Bimbingan 1:1 dengan pengajar berpengalaman untuk progress yang lebih personal"
+  }
+];
+
+const ieltsSkills = [
+  { icon: BookOpen, title: "Reading", description: "Teknik membaca cepat dan pemahaman teks akademik" },
+  { icon: BookText, title: "Writing", description: "Metode imitative writing untuk Task 1 & Task 2" },
+  { icon: Headphones, title: "Listening", description: "Latihan listening dengan berbagai aksen dan kecepatan" },
+  { icon: Mic, title: "Speaking", description: "Practice speaking dengan native speaker simulation" }
+];
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-100">
@@ -146,23 +171,7 @@ export default function Home() {
           </motion.div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: PenTool,
-                title: "Metode Imitative Writing",
-                description: "Pelopor metode imitative writing yang terbukti efektif untuk meningkatkan skor writing IELTS"
-              },
-              {
-                icon: Target,
-                title: "Focus IELTS Saja",
-                description: "Spesialisasi 100% pada persiapan IELTS untuk hasil yang lebih maksimal dan terarah"
-              },
-              {
-                icon: Users,
-                title: "Mentoring Personal",
-                description: "Bimbingan 1:1 dengan pengajar berpengalaman untuk progress yang lebih personal"
-              }
-            ].map((feature, index) => (
+            {features.map((feature, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
@@ -217,28 +226,7 @@ export default function Home() {
           </motion.div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: BookOpen,
-                title: "Reading",
-                description: "Teknik membaca cepat dan pemahaman teks akademik"
-              },
-              {
-                icon: Users,
-                title: "Writing",
-                description: "Metode imitative writing untuk Task 1 & Task 2"
-              },
-              {
-                icon: PenTool,
-                title: "Listening",
-                description: "Latihan listening dengan berbagai aksen dan kecepatan"
-              },
-              {
-                icon: Target,
-                title: "Speaking",
-                description: "Practice speaking dengan native speaker simulation"
-              }
-            ].map((skill, index) => (
+            {ieltsSkills.map((skill, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
