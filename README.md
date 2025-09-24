@@ -1,11 +1,12 @@
-# Global English - Static Replica
+# Warung IELTS - Static Replica
 
-This is a simple static replica of https://globalenglish.co.id built for learning and customization. It reproduces the main structure: header, hero, features, program cards, testimonials, FAQ, contact form, and footer.
+This is a simple static replica inspired by https://globalenglish.co.id but rebranded for Warung IELTS (demo). It reproduces the main structure: header, hero, features, program cards, testimonials, FAQ, contact form, and footer.
 
 How to use
 - Open `index.html` in a browser. No build step required.
 - Replace images in `assets/img/` and update paths in `index.html`.
-- Update the WhatsApp phone number in `index.html` and `assets/js/main.js`.
+- WhatsApp/Phone: 0817-7512-3999 (international: +62 817-7512-3999 / wa.me/6281775123999). Update these in `index.html` and `assets/js/main.js` if you change them.
+- Address used in demo: Jl. Brawijaya No.20a, Mangunrejo, Tulungrejo, Kec. Pare, Kabupaten Kediri, Jawa Timur 64212
 
 Files added
 - `index.html` - main page
