@@ -1,0 +1,1 @@
+This folder can contain images used on the site (logo, program photos). Replace these with real images and update src paths in index.html.
