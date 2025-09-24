@@ -30,6 +30,31 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .hero-ctas{display:flex;gap:12px}
 .hero .hero-illustration{width:320px;height:220px;background:#f3f9f6;border-radius:12px}
 
+/* subtle background circles to match original feel */
+.hero:before{content:"";position:absolute;left:0;right:0;top:0;height:240px;background:radial-gradient(circle at 20% 20%, rgba(11,107,79,0.06), transparent 20%), radial-gradient(circle at 80% 50%, rgba(255,183,3,0.05), transparent 20%);pointer-events:none}
+
+/* Floating WhatsApp button */
+.whatsapp-float{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:14px 16px;border-radius:999px;box-shadow:0 10px 30px rgba(37,211,102,0.18);z-index:200;display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:800}
+.whatsapp-float:hover{transform:translateY(-3px);transition:transform .18s ease}
+
+/* Card & button transitions */
+.card, .program{transition:transform .18s ease, box-shadow .18s ease}
+.card:hover, .program:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(11,107,79,0.08)}
+.btn{transition:transform .12s ease, box-shadow .12s ease}
+.btn:active{transform:translateY(1px)}
+
+/* header shadow on scroll */
+.site-header.scrolled{box-shadow:0 6px 20px rgba(15,23,42,0.06)}
+
+/* smooth scroll */
+html{scroll-behavior:smooth}
+
+/* Carousel */
+.carousel{position:relative;overflow:hidden}
+.carousel .slide{min-height:120px;display:none;padding:8px}
+.carousel .slide.active{display:block;animation:fadeIn .45s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
 /* Buttons */
 .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#f1f5f9;color:#0f172a;text-decoration:none;font-weight:700}
 .btn.primary{background:var(--brand);color:#fff;box-shadow:0 6px 18px rgba(11,107,79,0.12)}

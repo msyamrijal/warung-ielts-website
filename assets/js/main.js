@@ -27,4 +27,35 @@ document.addEventListener('DOMContentLoaded',function(){
       toggle&&toggle.setAttribute('aria-expanded','false')
     }
   }))
+
+  // header shadow on scroll
+  const header = document.querySelector('.site-header');
+  const onScroll = () => {
+    if(window.scrollY > 20) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  }
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+
+  // simple testimonial carousel
+  const carousel = document.getElementById('carousel');
+  if(carousel){
+    const slides = Array.from(carousel.querySelectorAll('.slide'));
+    let idx = 0;
+    const show = i=>{
+      slides.forEach((s,si)=>s.classList.toggle('active', si===i));
+    }
+    show(idx);
+    setInterval(()=>{ idx = (idx+1) % slides.length; show(idx); }, 4500);
+  }
+
+  // floating whatsapp quick link (also create if not present)
+  if(!document.querySelector('.whatsapp-float')){
+    const a=document.createElement('a');
+    a.href='https://wa.me/6281775123999';
+    a.target='_blank';
+    a.className='whatsapp-float';
+    a.innerText='Chat WA';
+    document.body.appendChild(a);
+  }
 })
