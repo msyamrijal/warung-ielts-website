@@ -1,127 +1,196 @@
-<!doctype html>
-<html lang="id">
-  <head>
-    <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Warung IELTS - Replica</title>
-  <!-- Google Font similar to site -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#">Warung IELTS</a>
-        <nav class="nav" id="main-nav">
-          <a class="nav-link" href="#programs">Program</a>
-          <a class="nav-link" href="#testimoni">Testimoni</a>
-          <a class="nav-link" href="#faq">FAQ</a>
-          <a class="nav-link" href="#contact">Kontak</a>
-        </nav>
-        <button class="btn-whatsapp" id="whatsapp-btn">Hubungi WA</button>
-  <button class="menu-toggle" id="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your English Course</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="https://via.placeholder.com/150x40?text=YourLogo" alt="Your Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-primary">Register Now</a>
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-inner">
-          <div>
-            <h1>Pengen Sukses di Tes IELTS?</h1>
-            <p>Warung IELTS — tempat persiapan IELTS berkualitas di Pare. Meningkatkan skor dengan tutor berpengalaman.</p>
-            <div class="hero-ctas">
-              <a class="btn primary" href="#programs">Lihat Program</a>
-              <a class="btn outline" href="#contact">Daftar Sekarang</a>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container">
+                <h1>Master English with the Best</h1>
+                <p>Join thousands of students who have successfully achieved their dreams with our proven methods.</p>
+                <a href="#" class="btn btn-primary">Explore Programs</a>
             </div>
-          </div>
-          <div class="hero-illustration" aria-hidden="true">
-            <!-- placeholder for illustration or hero image -->
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="features container">
-        <h2>Kenapa Pilih Warung IELTS?</h2>
-        <div class="grid">
-          <div class="card">Placement Test<br/><small>Menyesuaikan kompetensi</small></div>
-          <div class="card">Garansi<br/><small>Konsultasi gratis setelah program</small></div>
-          <div class="card">Tutor Kredibel<br/><small>Tutor terverifikasi</small></div>
-          <div class="card">Fleksibel<br/><small>Jadwal & harga yang bisa diatur</small></div>
-        </div>
-      </section>
+        <!-- Why Us Section -->
+        <section id="why-us" class="section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why Choose Us?</h2>
+                    <p>We provide the best learning experience for you.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="icon-wrapper"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3>Expert Tutors</h3>
+                        <p>Learn from certified and experienced native-speaking teachers.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-wrapper"><i class="fas fa-book-open"></i></div>
+                        <h3>Modern Curriculum</h3>
+                        <p>Our curriculum is up-to-date with global standards.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-wrapper"><i class="fas fa-comments"></i></div>
+                        <h3>Interactive Classes</h3>
+                        <p>Engage in fun and dynamic group discussions and activities.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-wrapper"><i class="fas fa-globe"></i></div>
+                        <h3>Global Community</h3>
+                        <p>Connect with students from all around the world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <section id="programs" class="programs container">
-        <h2>Pilih Program Belajar Camp kamu!</h2>
-        <div class="grid programs-grid">
-          <article class="program">
-            <h3>IELTS Intensive</h3>
-            <p>Program intensif persiapan IELTS dengan pembimbing berpengalaman.</p>
-            <p class="price">Rp 2.500.000</p>
-            <a class="btn" href="https://wa.me/6281775123999?text=Hallo%20Kak%20Admin,%20Saya%20mau%20Daftar%20Program%20IELTS%20Intensive">Daftar Sekarang</a>
-          </article>
+        <!-- Programs Section -->
+        <section id="programs" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Featured Programs</h2>
+                    <p>Find the perfect course that suits your needs.</p>
+                </div>
+                <div class="programs-grid">
+                    <!-- Program Card 1 -->
+                    <div class="program-card">
+                        <img src="https://via.placeholder.com/400x250/0f224d/ffffff?text=General+English" alt="General English">
+                        <div class="card-content">
+                            <h3>General English</h3>
+                            <p>Improve your everyday English communication skills for work, travel, or fun.</p>
+                            <a href="#" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Program Card 2 -->
+                    <div class="program-card">
+                        <img src="https://via.placeholder.com/400x250/0f224d/ffffff?text=IELTS+Prep" alt="IELTS Preparation">
+                        <div class="card-content">
+                            <h3>IELTS Preparation</h3>
+                            <p>Get the score you need with our intensive and targeted IELTS training program.</p>
+                            <a href="#" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Program Card 3 -->
+                    <div class="program-card">
+                        <img src="https://via.placeholder.com/400x250/0f224d/ffffff?text=Business+English" alt="Business English">
+                        <div class="card-content">
+                            <h3>Business English</h3>
+                            <p>Enhance your professional communication for the global marketplace.</p>
+                            <a href="#" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <article class="program">
-            <h3>4 Weeks IELTS Booster</h3>
-            <p>Fokus pada speaking & writing. Materi dan mock test intensif.</p>
-            <p class="price">Rp 1.200.000</p>
-            <a class="btn" href="https://wa.me/6281775123999?text=Hallo%20Kak%20Admin,%20Saya%20mau%20Daftar%20Program%204%20Weeks%20IELTS%20Booster">Daftar Sekarang</a>
-          </article>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Our Students Say</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-item">
+                        <p>"This course completely changed my confidence in speaking English. The teachers are amazing!"</p>
+                        <div class="author">
+                            <img src="https://via.placeholder.com/60" alt="Student 1">
+                            <div>
+                                <h4>Jane Doe</h4>
+                                <span>IELTS Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"I got the IELTS score I needed for my master's degree abroad. Thank you so much!"</p>
+                        <div class="author">
+                            <img src="https://via.placeholder.com/60" alt="Student 2">
+                            <div>
+                                <h4>John Smith</h4>
+                                <span>University Applicant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <article class="program">
-            <h3>8 Weeks Complete Prep</h3>
-            <p>Persiapan menyeluruh: listening, reading, writing, speaking + evaluasi berkala.</p>
-            <p class="price">Rp 2.750.000</p>
-            <a class="btn" href="https://wa.me/6281775123999?text=Hallo%20Kak%20Admin,%20Saya%20mau%20Daftar%20Program%208%20Weeks%20Complete%20Prep">Daftar Sekarang</a>
-          </article>
-        </div>
-        <p class="muted"><a href="/program">Lihat Program Lainnya &gt;&gt;</a></p>
-      </section>
-
-      <section id="testimoni" class="container testimoni">
-        <h2>Apa kata mereka tentang kami?</h2>
-        <div class="carousel" id="carousel">
-          <div class="slide"> <blockquote>"Suasana belajar menyenangkan, saya makin percaya diri."<footer>— Siswa A</footer></blockquote></div>
-          <div class="slide"> <blockquote>"Materi lengkap dan tutor sabar membantu kenaikan skor."<footer>— Siswa B</footer></blockquote></div>
-          <div class="slide"> <blockquote>"Rekomendasi terbaik di Pare untuk IELTS."<footer>— Siswa C</footer></blockquote></div>
-        </div>
-      </section>
-
-      <section id="faq" class="container faq">
-        <h2>FAQ</h2>
-        <details>
-          <summary>Kapan program belajar akan dimulai?</summary>
-          <p>Jadwal program tersedia setiap bulan; cek halaman program untuk detail.</p>
-        </details>
-        <details>
-          <summary>Bagaimana pembayaran DP dan pengembalian?</summary>
-          <p>DP dapat dibayar untuk mengamankan tempat; ketentuan pengembalian ada pada syarat & ketentuan.</p>
-        </details>
-      </section>
-
-      <section id="contact" class="container contact">
-        <h2>Kontak Kami</h2>
-        <p>Jl. Brawijaya No.20a, Mangunrejo, Tulungrejo, Kec. Pare, Kabupaten Kediri, Jawa Timur 64212</p>
-        <p><a href="https://wa.me/6281775123999">0817-7512-3999 (WhatsApp)</a></p>
-
-        <form class="contact-form" id="contact-form">
-          <label>Nama Lengkap <input name="name" required></label>
-          <label>Nomor WA <input name="phone" required></label>
-          <label>Email <input name="email" type="email"></label>
-          <label>Pilih Program <select name="program"><option>IELTS Intensive</option><option>4 Weeks IELTS Booster</option><option>8 Weeks Complete Prep</option></select></label>
-          <label>Comments <textarea name="message"></textarea></label>
-          <button class="btn primary" type="submit">Kirim Pesan</button>
-        </form>
-      </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>Copyright - Warung IELTS 2025</p>
-      </div>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>We are a leading English language institution dedicated to helping students achieve their personal and professional goals.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Education Lane, Knowledge City</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@yourenglishcourse.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your English Course. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
-  </body>
+    <script src="js/script.js"></script>
+</body>
 </html>
+
+
